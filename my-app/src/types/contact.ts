@@ -2,7 +2,7 @@ export interface Contact {
     name: string;
     age: number;
     email: string;
-    notes: string;
+    notes?: string;
     phone: string;
 }
 

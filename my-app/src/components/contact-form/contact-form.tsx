@@ -29,7 +29,7 @@ export const ContactForm: React.FC<Props>  = ({onSubmit, onCancel, existingIds})
             label="Phone"
             name="phone"
             extra="Phone number should be unique"
-            rules={[{ required: true, message: 'Please input your phone!' }, { validator: validateId}]}
+            rules={[{ required: true, type: 'number', message: 'Please input your phone!' }, { validator: validateId}]}
             >
                 <Input />
             </Form.Item>
@@ -50,7 +50,7 @@ export const ContactForm: React.FC<Props>  = ({onSubmit, onCancel, existingIds})
                 <Form.Item
             label="Email"
             name="email"
-            rules={[{ required: true, message: 'Please input your email!' }]}
+            rules={[{ required: true, type: 'email', message: 'Please input your email!' }]}
             >
                 <Input />
             </Form.Item>
